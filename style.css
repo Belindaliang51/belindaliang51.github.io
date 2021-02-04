@@ -248,8 +248,8 @@ button{
     /* position: absolute; */
     /* left: 30%; */
     width:65%;
-    margin: 0 auto 3rem;
-    margin-top: 3rem;
+    margin: 12rem auto 4rem;
+    /* margin-top: 6rem; */
     position: relative;
 }
 
