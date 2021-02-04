@@ -341,7 +341,7 @@ button{
 
     .nav-bar-list{
         top:65%;
-        right:10%;
+        left:49%;
         font-size:1rem; 
     }
     li.nav-bar{
@@ -351,10 +351,27 @@ button{
 @media only screen and (max-width:750px){
 
 }
-@media only screen and (max-width:650px){
-    .header-photo{
-        width: 21rem;
-        height: 21rem;
-        left:13%;
+@media only screen and (max-width: 650px){
+    html{
+        font-size: 60%;
     }
+    .header-photo{
+        width: 20rem;
+        height: 20rem;
+        left:43%;
+        top:10%;
+    }
+
+    .header-container .name {
+        top: 98%;
+        left:50%;
+        transform: translateX(-65%);
+    }
+
+    .nav-bar-list{
+        top:-5%;
+        left:5%;
+        font-size:1rem; 
+    }
+    
 }
