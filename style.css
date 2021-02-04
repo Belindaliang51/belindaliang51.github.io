@@ -162,10 +162,7 @@ ul>li>a{
     display: grid;
     grid-template-rows:repeat(4,400px);
     grid-template-columns: repeat(5, 1fr);
-    grid-row-gap: 10rem;
-    /* justify-content: center;
-    align-content: center; */
-    
+    grid-row-gap: 12rem;    
 }
 .grid-col-1{
     display: grid;
@@ -183,7 +180,6 @@ ul>li>a{
     font-size:1.5rem;
 }
 .grid-col-2{
-    
     border-radius: 1rem;
     display: grid;
     grid-column: 3/-1;
@@ -210,19 +206,12 @@ ul>li>a{
     justify-self: center;
 }
 
-
-
-
-
 button{
     width: 80px;
     height: 30px;
     background-color: rgb(219, 216, 216);
     font-size: 16px;
     border-radius: 5px;
-}
-.contact-email{
-    text-decoration: none;
 }
 
 ul>li>a:visted {
