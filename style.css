@@ -1,5 +1,4 @@
-/* Whole page */
-
+/* Globals*/
 *{  
     margin:0;
     padding:0;
@@ -11,6 +10,11 @@ html{
     text-decoration: none;
 }
 
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+/* margin setting */
 .margin-large{
     margin: 7rem auto;
 }
@@ -20,15 +24,20 @@ html{
 }
 
 .margin-small{
-    margin-bottom: 1rem;
+    margin-bottom: 1rem ;
+} 
+.margin-other{
+    margin: 4rem auto;
 }
 
+/* header section */
 .header {
     padding:6rem;
     background-image: linear-gradient(to bottom,rgba(0, 153, 255, 0.671), white);  
 }
 .header-container{
     position: relative;
+    margin: 3rem auto 7rem;
 }
 
 .header-photo{
@@ -68,7 +77,7 @@ html{
     width: 500px;
 
     animation-name: moveToLeft;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-delay: 1s;
     animation-timing-function: linear; 
 }
@@ -92,17 +101,16 @@ html{
  }
  
 
-.header .nav-bar-list{
+.nav-bar-list{
     position: absolute;
-    top:10%;
+    top:-3%;
     right:15%;
-    font-size: large;
-    font-size:1.3rem;  
+    font-size:1.3rem; 
 }
 
 li.nav-bar{
- display: inline-block;
- text-align: center;
+ display: inline;
+ text-align: left;
  margin-right: 2rem;
  text-transform: uppercase;
  /* border-radius: 50%;
@@ -111,13 +119,29 @@ li.nav-bar{
  padding:65px;
  background-color:#a76372; */
 }
-
-ul>li>a{ 
-    color: rgb(228, 222, 228);
-    /* more specific selector which is setting the color to the a element within li */
+button{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(219, 216, 216);
+    font-size: 1.2rem;
+    /* border-radius: 5px; */
+}
+.nav-bar a{
+    color: whitesmoke;
     text-decoration: none;
+}
 
+/* Alternative: more specific selector, all <a> element inside <li>
+ ul>li>a{ 
+    color: rgb(228, 222, 228);
+    text-decoration: none;
+    backface-visibility: hidden;
+ } */ 
+
+.nav-bar a:hover {
     
+    color: rgb(228, 222, 228);
+    text-decoration: underline;
 }
 
 .line-break{
@@ -137,9 +161,6 @@ ul>li>a{
     text-align: left;
 }
 
-.self-into--title{
-    /* to edit later */
-}
 
 .self-into--content{
     top:20%;  
@@ -152,11 +173,21 @@ ul>li>a{
     margin-bottom: 3rem;
 }
 
-.projects{
+[projects]{
     width: 65%;
     margin:0 auto ;
     margin-bottom: 3rem;
+/* 
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform:translateY(3rem), scaleY(0.93);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); */
 }
+
+/* [projects=in]{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+} */
 
 .grid-container {
     display: grid;
@@ -177,7 +208,13 @@ ul>li>a{
     font-size: 1.5rem;
 }
 .project-item--link{
-    font-size:1.5rem;
+    font-size:1.2rem;
+}
+.project-item--link:hover{
+    text-decoration: underline;
+    transform:translateY(-2px);
+
+    cursor: pointer;
 }
 .grid-col-2{
     border-radius: 1rem;
@@ -204,26 +241,7 @@ ul>li>a{
     height: auto;
     border-radius: 1rem;
     justify-self: center;
-}
-
-button{
-    width: 80px;
-    height: 30px;
-    background-color: rgb(219, 216, 216);
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-ul>li>a:visted {
-    background-color:red;
-}
-ul>li>a:hover {
-    background-color:#a76372;
-    /* color: rgb(228, 222, 228); */
-    border-radius: 1em;
-    width: 50px;
-    height: 50px;
-    padding:5px;
+    /* box-shadow: 3px 2px rgba(0, 0, 0, 0.123); */
 }
 
 #footer{
@@ -237,10 +255,15 @@ ul>li>a:hover {
 
 .contact{
     margin-right: 2rem;
-    opacity: 90%;
+    opacity: 85%;
     width:40px;
     height: 50px;
 }
+
+.contact:hover{
+    opacity: 1;
+}
+
 .copyright{
     position: absolute;
     top:10%;
