@@ -362,7 +362,9 @@ button{
         margin: -3.5rem auto 0 auto;
         text-align: center;
         font-size:1rem; 
+        width:fit-content;
     }
+ 
     .section-title{
         font-size: 3rem;
         text-align: center;
@@ -397,13 +399,13 @@ button{
         top:10%;
         margin-bottom: 2rem;
     }
-    .nav-bar-list{
+    /* .nav-bar-list{
         top:-10%;
         left:10%;
         transform: translateX(0%);
         text-align: left;
         font-size:1rem; 
-    }
+    } */
 }
 
 @media only screen and (max-width: 350px){
