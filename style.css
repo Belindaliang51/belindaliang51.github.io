@@ -382,6 +382,13 @@ button{
         height: 25rem;
         margin-top:-3rem;
     }
+    .contact{
+        width:3rem;
+        height: 4rem;
+    }
+    .copyright{
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 550px){
@@ -399,13 +406,6 @@ button{
         top:10%;
         margin-bottom: 2rem;
     }
-    /* .nav-bar-list{
-        top:-10%;
-        left:10%;
-        transform: translateX(0%);
-        text-align: left;
-        font-size:1rem; 
-    } */
 }
 
 @media only screen and (max-width: 350px){
