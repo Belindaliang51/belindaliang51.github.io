@@ -267,7 +267,7 @@ button{
 }
 
 /* media query */
-@media (max-width:1200px){
+@media only screen and (max-width:1200px){
     html{
         font-size: 70%;
     }
@@ -340,6 +340,10 @@ button{
 @media only screen and (max-width: 650px){
     html{
         font-size: 60%;
+    }
+    .line-break{
+        border: 5px dotted grey;
+        border-bottom: none;
     }
     .header-photo{
         width: 20rem;
