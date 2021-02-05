@@ -113,11 +113,6 @@ li.nav-bar{
  text-align: left;
  margin-right: 2rem;
  text-transform: uppercase;
- /* border-radius: 50%;
- width: 100px;
- height: 100px;
- padding:65px;
- background-color:#a76372; */
 }
 button{
     width: 80px;
@@ -345,9 +340,7 @@ button{
         margin-right: 0.5rem;
        }
 }
-@media only screen and (max-width:750px){
 
-}
 @media only screen and (max-width: 650px){
     html{
         font-size: 60%;
@@ -367,13 +360,17 @@ button{
     }
 
     .nav-bar-list{
-        /* top:95%; */
-        left:5%;
+        top:-10%;
+        left:50%;
+        transform: translateX(-50%);
+        margin: -3.5rem auto 0 auto;
+        text-align: center;
         font-size:1rem; 
     }
+  
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 550px){
     html{
         font-size: 50%;
     }
@@ -381,6 +378,30 @@ button{
         font-size: 3rem;
         width: 200px;
     }
-    
+    .header-photo{
+        width: 16rem;
+        height: 16rem;
+        left:43%;
+        top:10%;
+        margin-bottom: 2rem;
+    }
+    .nav-bar-list{
+        top:-10%;
+        left:10%;
+        transform: translateX(0%);
+        text-align: left;
+        font-size:1rem; 
+    }
+   
 }
+
+@media only screen and (max-width: 350px){
+   
+    .header-photo{
+        width: 12rem;
+        height: 12rem;
+        margin-bottom: 1rem;
+    }
+}
+
 
