@@ -205,12 +205,17 @@ button{
 .project-item--link{
     font-size:1.2rem;
 }
+
+.project-item--link:visited{
+    color:black
+}
 .project-item--link:hover{
     text-decoration: underline;
     transform:translateY(-2px);
-
+    color:gray;
     cursor: pointer;
 }
+
 .grid-col-2{
     border-radius: 1rem;
     display: grid;
