@@ -155,7 +155,9 @@ button{
     height: 50%;
     text-align: left;
 }
-
+.self-into--title{
+    padding-bottom:4rem;
+}
 .self-into--content{
     top:20%;  
     font-size: 1.5em;
@@ -372,10 +374,11 @@ button{
     .grid-col-1{
         grid-column: 1/-1;
     }
+
     .grid-col-2{
         grid-column: 1/-1;
         height: 25rem;
-        margin-top:-2.75rem;
+        margin-top:-3rem;
     }
 }
 
