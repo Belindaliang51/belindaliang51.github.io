@@ -11,7 +11,8 @@ html{
 }
 
 ::selection {
-    background: rgba(222, 173, 255, 0.466);
+    background: rgb(173, 192, 255);
+    color:rgb(255, 255, 255);
   }
 
 *, *:before, *:after{
@@ -138,7 +139,6 @@ button{
  } */ 
 
 .nav-bar a:hover {
-    
     color: rgb(228, 222, 228);
     text-decoration: underline;
 }
@@ -165,8 +165,19 @@ button{
 .self-into--content{
     top:20%;  
     font-size: 1.5em;
-    
+    line-height: 3.5rem;
+    margin-bottom: 2.5rem;
 }
+.self-into--chat{
+    color:rgb(31, 84, 255);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.self-into--chat:hover{
+    background-color: rgba(170, 187, 219, 0.2);
+    cursor: pointer;
+}
+
 .section-title{
     font-size: 4.5em;
     margin-bottom: 3rem;
